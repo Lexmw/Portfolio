@@ -17,7 +17,7 @@ app.use(express.static('./public'));
 // ?app.use('/contact', express.static('././contact'))
 
 app.get('/', (req, res) =>{
- res.status(200);
+ res.render('index');
 })
 
 app.get('/contact', (req, res) => {
@@ -25,7 +25,11 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/thanks', (req, res) => {
-    res.status(200);
+    res.status(200).render('thanks');
+});
+
+app.get('/projects', (req,res) => {
+    res.render('projects');
 });
 
 module.exports = app;

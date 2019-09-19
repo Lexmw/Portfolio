@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lexius' Portfolio</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'/>
+</head>
+<style>
+.container{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.profile-img{
+    height: 400px;
+    width:350px;
+}
+/* #image-holder{
+    margin:15px;
+    float:left;
+    padding:15px;
+} */
+
+/* #about{
+    margin: 15px;
+    padding: 30px;
+    text-align:justify;
+} */
+
+hr{
+    color: rgb(17, 175, 101);
+    border:1.5px solid;
+}
+</style>
+<body>
+<%- include('partials/header') %>
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-4' id='image-holder'>
+                <img class='profile-img'src='../photo/profile_img.jpg'/>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class='col-md-6 mb-md-0 mb-6' id='about'>
+                <h2>Hi, I'm Lexius!</h2>
+                <br>
+                <p>With my passion for science education and science communication, I chose to pursue Full Stack Development
+                    to help companies communicate their mission and their expertise with their customers. 
+                    I am looking for a position where I am able to 
+                    communicate complex concepts and work to educate others around me.
+                </p>
+                <br>
+                <p>
+                    When I'm not coding, I am planting in my garden with my siblings or going on long hikes. 
+                    I love dancing and travelign to new places. 
+                    But most of all, I am a straight foodie and I have to try everything at least once!
+                </p>
+            </div>
+         </div>
+         <hr>
+         <div class='row'>
+             <div class="col-md-4">
+                <h3>Tech Stack</h3>
+                <h4>Feel the MERN!</h4>
+             </div>
+             <hr class="clearfix w-100 d-md-none pb-3">
+             <div class='col-md-6' id='about'>
+                <p> I have a MERN tech stack.
+                    Placefillers
+                    Placefilelrs.
+                </p>
+             </div>
+
+         </div>
+    </div>
+
+<%-include('partials/footer') %>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html> 
