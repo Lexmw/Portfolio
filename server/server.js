@@ -38,5 +38,9 @@ app.get('/projects', (req,res) => {
     res.render('projects');
 });
 
+app.get('*', function (req, res) {
+    res.send('Sorry, this page does not exist 😥').status(404);
+});
+
 
 module.exports = app;
